@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.Domain", "I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.SharedKernal", "IdentityService.SharedKernal\IdentityService.SharedKernal.csproj", "{2F5F3130-40C5-4031-9964-4424BA34D603}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.Infrastucture", "IdentityService.Infrastucture\IdentityService.Infrastucture.csproj", "{42600CEF-4FEA-4D97-B43D-B8E2264A7AE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.Application", "IdentityService.Application\IdentityService.Application.csproj", "{040FA411-3CDC-4B7D-8571-3538B70DB4D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{2F5F3130-40C5-4031-9964-4424BA34D603}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F5F3130-40C5-4031-9964-4424BA34D603}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F5F3130-40C5-4031-9964-4424BA34D603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42600CEF-4FEA-4D97-B43D-B8E2264A7AE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42600CEF-4FEA-4D97-B43D-B8E2264A7AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42600CEF-4FEA-4D97-B43D-B8E2264A7AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42600CEF-4FEA-4D97-B43D-B8E2264A7AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{040FA411-3CDC-4B7D-8571-3538B70DB4D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{040FA411-3CDC-4B7D-8571-3538B70DB4D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{040FA411-3CDC-4B7D-8571-3538B70DB4D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{040FA411-3CDC-4B7D-8571-3538B70DB4D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
