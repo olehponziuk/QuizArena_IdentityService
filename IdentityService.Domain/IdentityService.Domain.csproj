@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Enus\" />
       <Folder Include="Events\" />
       <Folder Include="Specifications\" />
     </ItemGroup>
