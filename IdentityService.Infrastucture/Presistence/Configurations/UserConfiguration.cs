@@ -1,4 +1,5 @@
 ﻿using IdentityService.Domain.Entities;
+using IdentityService.Infrastucture.Presistence.LinkObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -17,5 +18,25 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .IsRequired();
         builder.HasIndex(x => x.Email)
             .IsUnique();
+
+        builder.OwnsMany<UserRoleLink>("_roleIds", b =>
+        {
+            b.ToTable("UserRoles");
+            
+            b.WithOwner().HasForeignKey("UserId");
+            b.Property(p => p.UserId);
+            b.Property(p => p.RoleId);
+            
+            b.HasKey(x=> new { x.UserId, x.RoleId });
+            b.HasIndex(x => new { x.UserId, x.RoleId });
+            
+            b.HasOne<Role>()
+                .WithMany()
+                .HasForeignKey("RoleId")
+                .OnDelete(DeleteBehavior.Restrict);
+        });
+        
+        builder.Navigation("_roleIds")
+            .UsePropertyAccessMode(PropertyAccessMode.Field);
     }
 }
